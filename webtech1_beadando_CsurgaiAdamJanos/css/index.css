@@ -1,0 +1,125 @@
+body{
+    background-color: lavender;
+}
+
+#banner{
+    height: 80px;
+    background-color: rgb(179, 137, 137);
+    color: rgb(23, 9, 153);
+    font-size: 70px;
+}
+
+#menuBar { 
+    font-size: 25px;
+    float: right;
+    margin-top: 15px;
+}
+
+a:link{
+    color: rgb(151, 23, 0);
+}
+
+a:visited{
+    color: rgb(64, 51, 243);
+}
+
+#menuBar .menuButton {
+    width: 170px;
+    background: orange;
+    border: 5px solid black;
+    border-radius: 20px;
+    padding: auto;
+    margin: 5px;
+    margin-left:60px;
+    text-align: center;
+    display: inline-block;
+    
+}
+
+#menuBar .menuButton:HOVER {
+    background: black;
+    border: 5px solid rgb(94, 15, 15);
+    color: white;
+}
+
+#carTable{
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    border: 5px darkgreen solid;
+    border-collapse: collapse;
+}
+
+#carTable td{
+    border: 5px darkgreen solid;
+}
+
+#carTable th{
+    border: 5px darkgreen solid;
+}
+
+#carAddTable{
+    border: darkgreen 5px solid;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 20px;
+}
+
+#carModTable{
+    border: darkgreen 5px solid;
+    margin-right: 30%;
+    margin-left: 30%;
+    margin-top: 20px;
+}
+
+#manufacturerTable{
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    border: 5px darkgreen solid;
+    border-collapse: collapse;
+}
+
+#manufacturerTable td{
+    border: 5px darkgreen solid;
+}
+
+#manufacturerTable th{
+    border: 5px darkgreen solid;
+}
+
+#manufacturerAddTable{
+    border: darkgreen 5px solid;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 20px;
+}
+.select{
+    width: 120px;
+}
+
+#carDeleteTable{
+    border: darkgreen 5px solid;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 20px;
+}
+
+#manufacturerModTable{
+    border: darkgreen 5px solid;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 20px;
+}
+
+#manufacturerDeleteTable{
+    border: darkgreen 5px solid;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 20px;
+}
+
+.form-submit-button{
+    background-color: rgb(179, 137, 137);
+    color: rgb(0, 0, 0);
+}

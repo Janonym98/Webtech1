@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <script src="js/manufacturers.js" type="text/javascript"></script>
+    <script src="js/addmanufacturers.js" type="text/javascript"></script>
+    <script src="js/deletemanufacturer.js" type="text/javascript"></script>
+    <script src="js/modifymanufacturer.js" type="text/javascript"></script>
+    <h1>Gyártók</h1>
+    <table id="manufacturerTable">
+        <tbody>
+            <tr>
+                <th>ID</th>
+                <th>Név</th>
+                <th>Ország</th>
+                <th>Alapítva</th>
+            </tr>
+        </tbody>
+    </table>
+
+    <form id="addManufacturer">
+        <table id="manufacturerAddTable">
+            <tr><td colspan="2" align="center"><b>Hozzáadás</b></td></tr>
+            <tr>
+                <td><b>Név</b></td>
+                <td><input type="text" required="required" name="name" placeholder="Subaru"/></td>
+            </tr>
+            <tr>
+                <td><b>Ország:</b></td>
+                <td><input type="text" required="required" name="country" placeholder="Japan"/></td>
+            </tr>
+            <tr>
+                <td><b>Alapítva:</b></td>
+                <td><input type="date" required="required" name="founded"/></td>
+            </tr>
+                <td>
+                    <input type="submit" name="insert" value="Hozzáadás" class="form-submit-button">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <form id="modManufacturer">
+        <table id="manufacturerModTable">
+            <tr><td colspan="2" align="center"><b>Módosítás</b></td></tr>
+            <tr>
+                <td><b>ID</b></td>
+                <td><input type="text" required="required" name="ID"></td>
+            </tr>
+            <tr>
+                <td><b>Név</b></td>
+                <td><input type="text" required="required" name="name" placeholder="Subaru"/></td>
+            </tr>
+            <tr>
+                <td><b>Ország:</b></td>
+                <td><input type="text" required="required" name="country" placeholder="Japan"/></td>
+            </tr>
+            <tr>
+                <td><b>Alapítva:</b></td>
+                <td><input type="date" required="required" name="founded"/></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="modify" value="Módosítás" class="form-submit-button">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <form id="deleteManufacturer">
+        <table id="manufacturerDeleteTable">
+            <tr><td colspan="2" align="center"><b>Törlés</b></td></tr>
+            <tr>
+                <td><b>ID:</b></td>
+                <td><input type="text" name="ID" required="required" ></td>
+            </tr>
+            <tr><td><input type="submit" name="delete" value="Töröl" class="form-submit-button"></td></tr>
+        </table>
+    </form>
+
+</html>

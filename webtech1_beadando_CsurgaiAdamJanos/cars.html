@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <script src="js/cars.js" type="text/javascript"></script>
+    <script src="js/addcar.js" type="text/javascript"></script>
+    <script src="js/deletecar.js" type="text/javascript"></script>
+    <script src="js/modifycar.js" type="text/javascript"></script>
+    <h1>Autók</h1>
+    
+    <table id="carTable">
+        <tbody>
+            <tr>
+                <th>ID</th>
+                <th>Típus</th>
+                <th>Fogyasztás</th>
+                <th>Szín</th>
+                <th>Gyártó</th>
+                <th>Készleten</th>
+                <th>Évjárat</th>
+                <th>Lóerő</th>
+            </tr>
+        </tbody>
+    </table>
+            <form id="addCar">
+                <table id="carAddTable">
+                    <tr><td colspan="2" align="center"><b>Hozzáadás</b></td></tr>
+                    <tr>
+                        <td><b>Típus:</b></td>
+                        <td><input type="text" required="required" name="name" placeholder="Charger"/></td>
+                    </tr>
+                    <tr>
+                        <td><b>Fogyasztás:</b></td>
+                        <td><input type="text" required="required" name="consumption" placeholder="15l/100km"/></td>
+                    </tr>
+                    <tr>
+                        <td><b>Szín:</b></td>
+                        <td><input type="text" required="required" name="color" placeholder="Matte black"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Gyártó:</b></td>
+                        <td>
+                            <select name="manufacturer" required="required" class="select">
+                                <option value="Dodge">Dodge</option>
+                                <option value="Ferrari">Ferrari</option>
+                                <option value="Subaru">Subaru</option>
+                                <option value="Mustang">Mustang</option>
+                                <option value="Mercedes">Mercedes</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Készletszám:</b></td>
+                        <td><input type="number" required="required" name="avaiable" placeholder="12"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Évjárat:</b></td>
+                        <td><input type="number" required="required" name="year" placeholder="1970"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Lóerő:</b></td>
+                        <td><input type="number" required="required" name="horsepower" placeholder="400"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" name="insert" value="Hozzáadás" class="form-submit-button">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <form id="modCar">
+                <table id="carModTable">
+                    <tr><td colspan="2" align="center"><b>Módosítás</b></td></tr>
+                    <tr>
+                        <td><b>ID:</b></td>
+                        <td><input type="text" required="required" name="_id"/></td>
+                    </tr>
+                    <tr>
+                        <td><b>Típus:</b></td>
+                        <td><input type="text" required="required" name="name" placeholder="Charger"/></td>
+                    </tr>
+                    <tr>
+                        <td><b>Fogyasztás:</b></td>
+                        <td><input type="text" required="required" name="consumption" placeholder="15l/100km"/></td>
+                    </tr>
+                    <tr>
+                        <td><b>Szín</b></td>
+                        <td><input type="text" required="required" name="color" placeholder="Matte black"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Gyártó:</b></td>
+                        <td>
+                            <select name="manufacturer" required="required" class="select">
+                                <option value="Dodge">Dodge</option>
+                                <option value="Ferrari">Ferrari</option>
+                                <option value="Subaru">Subaru</option>
+                                <option value="Mustang">Mustang</option>
+                                <option value="Mercedes">Mercedes</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Készletszám:</b></td>
+                        <td><input type="number" required="required" name="avaiable" placeholder="12"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Évjárat:</b></td>
+                        <td><input type="number" required="required" name="year" placeholder="1970"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Lóerő:</b></td>
+                        <td><input type="number" required="required" name="horsepower" placeholder="400"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" name="modify" value="Módosítás" class="form-submit-button">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+
+            <form id="deleteCar">
+                <table id="carDeleteTable">
+                    <tr><td colspan="2" align="center"><b>Törlés</b></td></tr>
+                    <tr>
+                        <td><b>ID:</b></td>
+                        <td><input type="text" name="ID" required="required" ></td>
+                    </tr>
+                    <tr><td><input type="submit" name="delete" value="Töröl" class="form-submit-button"></td></tr>
+                </table>
+            </form>
+</html>
